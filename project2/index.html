@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in css</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body><div><h1>VARIABLE</h1></div><hr><hr>
+    <!--About topic of VARIABLE IN CSS -->
+    Variables in CSS:(sep29)
+    <div> <p> Variables in CSS, also known as custom properties, allow you to store and reuse values throughout your stylesheets. They are defined using the -- prefix followed by a name and a value. Here's how you declare a CSS variable:</p></div>
+<br><p1> :root  {  <br>
+    --main-color: #007bff;<br>
+    --font-size: 16px;<br>
+  }<br>
+  :root selector is used to define variables at the root level (global scope) of your stylesheet.<br>
+  You can use these variables throughout your CSS rules by referencing them with the var() function. For example:</p1><br>
+  <p2>
+    body {<br>
+        background-color: var(--main-color);<br>
+        font-size: var(--font-size);<br>
+      }<br>
+      
+      h1 {<br>
+        color: var(--main-color);<br>
+      }<br>
+      Using variables makes it easy to update styles across your entire website by changing the variable value in one place.<br>
+  </p2><br>
+  <p3>
+    Media Queries in CSS:<br>
+Media queries in CSS allow you to apply different styles based on the characteristics of the user's device or viewport, such as screen size, resolution, or device orientation. Media queries are typically used for creating responsive web designs. Here's the basic syntax for a media query:
+  </p3><br>
+
+<div>@media media-type and (media-feature) {<br>
+    /* CSS rules to apply when the media query conditions are met */<br>
+  }<br>
+
+</div><br>
+<span>media-type can be screen, print, speech, etc., specifying the type of media the query applies to.<br>
+    media-feature defines the condition under which the styles should apply, such as max-width, min-width, orientation, and more.<br>
+    Here's an example of a media query that changes the background color of a page when the viewport width is less than 600 pixels:<br>
+
+</span><br>
+<footer>@media screen and (max-width: 600px) {<br>
+    body {<br>
+      background-color: lightgray;<br>
+    }<br>
+  }<br>
+
+</footer><br>
+<legend>You can also combine multiple media features and types to create complex queries. For instance, this media query applies styles when the viewport width is less than 600 pixels and the device is in portrait mode:
+
+
+</legend><br>@media screen and (max-width: 600px) and (orientation: portrait) {<br>
+    /* Styles for small screens in portrait mode */<br>
+  }<br>
+  Using variables with media queries can make your CSS even more powerful and flexible. Here's an example of how to use a variable with a media query:<br>
+
+
+</body>
+</html>

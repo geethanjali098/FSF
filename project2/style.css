@@ -1,0 +1,12 @@
+body{
+ background-color: aqua;
+ font-style: italic;
+ font-size: x-large;
+ font-family:monospace;
+ .h1{
+  font-style: italic;
+ }
+ p1{
+  color: rgb(red, green, blue);
+ }
+}
