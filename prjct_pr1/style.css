@@ -1,0 +1,19 @@
+div{
+    text-align:center;
+}
+ul{
+    display:inline-block;
+    text-align:left;
+}
+input{
+    font-size: 25px;
+   background: #ecce57;
+}
+popup.button{
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+button{
+    color: #ecce57;
+}
